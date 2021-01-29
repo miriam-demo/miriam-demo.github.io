@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>MIRIAM</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/resume.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+      <span class="d-block d-lg-none">MIRIAM</span>
+      <!--<span class="d-none d-lg-block">
+        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
+      </span>-->
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#abstract">Abstract</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#stakeholders">Description of Stakeholders</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#requirements">System Requirements</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#demo">System Demo</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#estrutura">Solution Structure</a>
+        </li>
+        <!--<li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
+        </li>-->
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container-fluid p-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="abstract">
+      <div class="w-100">
+        <h2 class="mb-0">MIRIAM: 
+          <span class="text-primary">A Blockchain-Based Solution for Managing Registrations of Medical Professionals</span>
+        </h2>
+  <br/>
+  <br/>
+        <p class="lead mb-5" align="justify">The fiscal agencies have been facing several challenges regarding the guarantee of the legal profession. In particular, the context of medicine exercise poses as a crucial one, since the professionals  involved  in  this  area  are  responsible  for  dealing with  the  health  of  third  parties.  However,  we  may  notice  a number of incidents and frauds related to the records of medical professionals,  such  as  issuing  forged  diplomas  or  availability  of information  not  validated  by  the  Regional  Council  of  Medicine. Thus,  in  order  to  avoid  these  frauds,  we  assume  to  be  relevant to  investigate  innovative  solutions  aiming  to  maintain  in  a  safe and  transparent  way  the  professional  history  of  each  doctor. In  this  context,  our  main  objective  is  to  present  MIRIAM,  a blockchain-based  solution  based  on  the  Hyperledger  platform that  allows  in  a  decentralized  and  reliable  fashion  the  storage of  relevant  information  necessary  for  managing  registrations of  medical  professionals.  The  events  covered  by  our  solution were validated through a semi-structured interview with a high-level  director  of  a  Regional  Council  of  Medicine.  Therefore, we  contribute  and  advance  in  the  knowledge  by  designing  and empirically evaluating a blockchain-based solution for managing records of Brazilian medical professionals. In addition, we clarifythe adoption of Hyperledger technology as enabler for increasing the  transparency  and  reliability  of  referred  data.</p>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="stakeholders">
+      <div class="w-100">
+        <h2 class="mb-5">Description of Stakeholders</h2>
+
+        <p align="justify"> The system's stakeholders can be divided into two groups: the administrator, responsible for the development and maintenance of the system, and the employees, who will be able to execute the functionalities of the system according to what has been defined for each entity.</p>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Administrator</h3>
+            <p align="justify">Responsible for the development and maintenance of the system. Your main responsibility is to add the stakeholder employee in the system, that is, you can only access the system, the employee whose registration was added by the administrator. First, after a registration request by an employee, the administrator will enter the system using a pre-defined login and password, as shown in the Figure below.</p>
+
+            <center><img src="img/telaInicial.png" width="600" alt="Demonstracao"></center>
+
+            <p align="justify"> After login, the employee registration screen is displayed. This allows the addition of the following information: name, surname, e-mail and subgroup. The email field defines to which email the provisional password will be sent to the new employee and the subgroup field defines what type of employee is being registered. </p>
+
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Employee</h3>
+            <p align="justify">Execute the functionalities of the system according to what has been defined for each entity:</p>
+            
+            <div class="subheading mb-3">HEI employees</div>
+            <p align="justify">Responsible for adding the diploma of the newly graduated doctor along with his data to the network.</p>
+            <div class="subheading mb-3">SE employees</div>
+            <p align="justify">Responsible for adding to the medical data on the network the specialization record for a doctor.</p>
+            <div class="subheading mb-3">RCM employees</div>
+            <p align="justify">Responsible for validating the medical record in RCM.</p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="requirements">
+      <div class="w-100">
+
+        <h2 class="mb-5">System Requirements</h2>
+
+        <p align="justify">From the analysis of the identified and discussed needs, it was decided to establish the following functional (RF) and quality (RNF) requirements for the project. The requirements are indicated and referenced in the format [FRxx] or [NFRxx], where xx refers to the requirement number. Such requirements are described below:</p>
+
+        <center><img src="img/table.png" width="650" alt="Demonstracao" align="middle"></center>
+
+        <p align="justify">
+          In order to show an overview of the features proposed for the system, the Use Case Diagram is presented below with a description of the two types of stakeholders presented in this approach: administrator and employee. 
+        </p>
+
+        <center><img src="img/casoDeUso.png" width="900" alt="Demonstracao"></center>
+
+        <p align="justify">
+          First, both stakeholders need to use the use case to authenticate in order to log into the system. The administrator is responsible for managing the use cases referring to the inclusion of employees in the [Register Employee] network, while the employee is related to record editing cases on the [Register, Search, Edit Records] and administrative block [Authentication, Data Recovery] Password]. The Employee is also allowed to send error feedbacks to the administrator, this function is described in the use case [Feedback].
+        </p>
+
+        <p align="justify">
+          Each use case is detailed with the following information: name, actors, priority, objective, inputs, preconditions, postconditions, normal flow of events, alternative flow of events and exceptional flow of events, as shown in the figure below:
+        </p>
+
+        <center><img src="img/documentacao.png" width="300" alt="Demonstracao" class="center"></center>
+
+        <p align="justify">
+          The use case documentation can be downloaded at <a href="img/casosDeUso.pdf" target="_blank" title="Casos de Uso">Link</a>
+        </p>
+
+        <p align="justify">
+          The Figure below shows the sequence diagram. It describes the step-by-step actions taken so that an employee can access the system and add a record on the blockchain.
+        </p>
+
+        <center><img src="img/sequencia.png" width="650" alt="Demonstracao"></center>
+
+        <p align="justify">
+          The process starts with the system administrator accessing the system to register an employee in the system. After the employee is registered in the system, they are allowed to log in to the system and make requests to add registration to the blockchain. The system receives this request and forwards a json object containing this information to one of the blockchain nodes. When the information arrives at one of the nodes it is received by a REST server that performs a validation and transmits the information to the other blockchain nodes. Finally, the REST server returns a json response object to the system, warning of the success or failure of the operation, this response is then treated and displayed to the employee through an alert.
+        </p>
+
+    </section>
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="demo">
+      <div class="w-100">
+        <h2 class="mb-5">System Demo</h2>
+
+	<p align="justify">This section presents a demonstration of the developed system:</p>
+
+	<p align="justify">First, with an application for registration by an employee, the administrator will enter the system using a pre-defined login and password, as shown in the figure below:</p>
+
+    <center><img src="img/telaInicial.png" width="800"alt="Demonstracao" class="center"></center>
+
+    <p>The figure below shows the employee registration screen. This allows the addition of the following information: name, surname, e-mail and subgroup. The email field defines to which email the provisional password will be sent to the new employee and the subgroup field defines what type of employee is being registered.</p>
+
+    <center><img src="img/cadastroAdmin.png" width="800" alt="Demonstracao" class="center"></center>
+
+    <p>The employee whose registration was added by the administrator actor can log in to the system with his login and password, entered on the initial page presented below:</p>
+
+    <center><img src="img/index.png" width="800"alt="Demonstracao" class="center"></center>
+
+	<p align="justify">This is the main screen of the application and it is visible regardless of the subgroup to which the employee belongs.</p>
+
+	<p align="justify">In the Figure below the screen for registering the diploma for the blockchain is displayed, this screen is adjusted according to the subgroup that the employee belongs to. The screen in question is displayed in a personalized way so that the HEI employee can fill in the data of the diploma he wants to send to the for blockchain. </p>
+
+    <center><img src="img/telaCadastro.png" width="800" alt="Demonstracao" class="center"></center>
+
+	<p align="justify">After filling in the fields and clicking add, a connection will be established between the web application server and the blockchain. If no error has occurred, an alert will be displayed notifying that the data has been added and a message with the id of the diploma added is forwarded to the registered student's email. However, if an error occurs, an alert is triggered informing the error occurred. </p>
+
+	<p align="justify">It is possible that the IES employee can search for one or more records added through the search screen shown in the Figure below. Through it, the employee types the CPF belonging to the student whose diploma he is looking for. The web system will perform a query request for the blockchain and return the student's information through a table.</p>
+
+    <center><img src="img/telaBusca.png" width="800" alt="Demonstracao" class="center"></center>
+
+	<p align="justify">Through the edit button displayed in the action column, change student data if necessary, through this button a screen similar to the registration screen will be displayed.</p>
+
+	<p align="justify">A CRM employee will perform the same login steps as above and access the main screen as on the main screen. However, the medical record castrated screen shown in Figure differs from the screen displayed to an HEI employee. On this screen, the CRM Employee will add the data related to the medical record you want to add.</p>
+
+    <center><img src="img/telaCadastroCRM.png" width="800" alt="Demonstracao" class="center"></center>
+
+
+    <p align="justify">In this case, as shown in the Figure below, the CRM Employee searches for the CPF of the registered doctor as well as the IES employee and visualizes the data through a table. It is also possible to edit the information in the doctor's record through the edit button, displayed in the action column.</p>
+
+    <center><img src="img/telaBuscaCRM.png" width="800" alt="Demonstracao" class="center"></center>
+
+
+    <p align="justify">Regardless of the subgroup to which the employee belongs, everyone can send a feedback message to the system administrator. The Figure below presents the feedback screen with an example of a possible message that employees can send to the Administrator.</p>
+
+    <center><img src="img/feedback.png" width="800" alt="Demonstracao" class="center"></center>
+
+    </section>
+
+    <video width="320" height="240"  style="margin-left: 25%;" controls>
+      <source src="img/movie.mp4" type="video/mp4">
+      <source src="img/movie.ogg" type="video/ogg">
+      Your browser does not support the video tag.
+    </video>
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="estrutura">
+      <div class="w-100">
+        <h2 class="mb-5">Solution Structure</h2>
+
+      <p align="justify">
+        The solution proposed in this work is based on the current processes necessary for the physician's registration and his relevant information in the CRM, which can carry out various events, such as his first registration, re-registration, transfers, cancellations and specialty registration, for example. Therefore, it is necessary to take into account the entities that make up the information recording scenario. In line with the processes described in the previous section, the following categories are proposed which represent the nodes participating in the network:
+      </p>
+
+            <div class="subheading mb-3">Regional  Council  of  Medicine (RCM):</div>
+            <p align="justify">
+              it is the entity responsible for inspecting, investigating and judging irregularities against doctors in the State. In addition, it is the body responsible for registering diplomas, titles of specialty and relevant information regarding the professional.
+            </p>
+            <div class="subheading mb-3">Higher  Education  Institution (HEI):</div>
+            <p align="justify">
+              is an institution that promotes higher education that, according to its characteristics, is classified as university and colleges of higher education.
+            </p>
+            <div class="subheading mb-3">Specialty  Entity (SE):</div>
+            <p align="justify"> 
+              is an institution that issues medical residency certificates and specialty titles. These documents can only be issued by specialty societies affiliated to the Brazilian Medical Association (AMB) and / or medical residency institutions accredited by the National Medical Residency Commission (CNRM). These institutions have the purpose of allowing the qualification of the doctor graduated in the different specialties of medicine at the postgraduate level, in which the apprentices develop specific competences for the proper application of their functions.
+            </p>
+
+            <p align="justify">
+              A presente proposta utiliza uma blockchain permissionada da tecnologia Hyperledger, onde cada nó define papéis que são atribuídas aos participantes e o acesso é concedido ou restrito por meio desses papéis. Assim, um provedor de serviço MSP trata de gerar as credenciais para um dos diversos tipos de participantes como apresentado na Figura abaixo.
+            </p>
+
+
+            <center><img src="img/visaoGeral.png" width="700" alt="Demonstracao" class="center"></center>
+
+         <p align="justify">
+          However, in the specific case of the proposed solution, it follows a mono-organizational model, where there is only a single network, and all nodes must be certified as one of the three types of participants. For registration in this model, only one of the CRM nodes receives the certificate directly from the Hyperledger blockchain and, therefore, being responsible for using it, to allow the MSP service to generate the certificates for the other two participants (IES and EE). In this way, a specific member (IES or EE) will only have access to important resources after validating the certificate issued by the MSP through CRM. It is important to note that CRM only issues certificates, it does not have access to the resources used by other participants, for example, the registration of the Diploma.
+        </p>
+
+        <center><img src="img/associacaoCentificado.png" width="700" alt="Demonstracao" class="center"></center>
+
+
+      <p align="justify" >
+        The Figure below illustrates the relationship between these participants. The central CRM is generated when the blockchain is created, as mentioned is the only one of the CRMs that has a container with a node with the MSP service, thus being responsible for generating the certificates that will add the other participants to the network.
+      </p>
+
+        <center><img src="img/estruturaProposta.png" width="500" alt="Demonstracao" class="center"></center>
+
+      <p align="justify">
+        All blockchain participants have a copy of the ledger, thus guaranteeing data integrity in case one of them is attacked. However, only the CRM instances have the Ordering Service that create blocks and add them to the network. Therefore, the system is set up so that when you want to add information to the blockchain, the instance closest to the request, belonging to one of the 27 CRMs, creates the block and distributes it to the others.
+      </p>
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/resume.min.js"></script>
+
+</body>
+
+</html>
